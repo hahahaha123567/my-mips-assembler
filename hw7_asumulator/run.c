@@ -54,18 +54,18 @@ void runI(unsigned int ins)
 	// lw
 	case 0x23:
 		;// to declare a varible after a label
-		char * ptr = code;
-		ptr += reg[rs];
-		ptr += (int)imme;
-		reg[rt] = *(unsigned int *)ptr;
+		char * ptr1 = code;
+		ptr1 += reg[rs];
+		ptr1 += (int)imme;
+		reg[rt] = *(unsigned int *)ptr1;
 		break;
 	// sw
 	case 0x2B:
 		;// to declare a varible after a label
-		char * ptr = code;
-		ptr += reg[rs];
-		ptr += (int)imme;
-		*(unsigned int *)ptr = reg[rt];
+		char * ptr2 = code;
+		ptr2 += reg[rs];
+		ptr2 += (int)imme;
+		*(unsigned int *)ptr2 = reg[rt];
 		break;
 	// beq
 	case 0x04:
