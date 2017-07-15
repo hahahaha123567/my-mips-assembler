@@ -1,4 +1,4 @@
-# My Assembler
+# My Mips Assembler
 
 ## Function
 
